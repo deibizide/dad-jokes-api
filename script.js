@@ -1,5 +1,6 @@
 const button = document.querySelector('.btn');
 const jokePlaceholder = document.querySelector('.joke-placeholder');
+const error = document.querySelector('.error-msg');
 const endPoint = 'https://icanhazdadjoke.com/';
 
 function getJoke() {
@@ -13,7 +14,7 @@ function getJoke() {
             jokePlaceholder.innerHTML = `<p class="joke">${resp.joke}</p>`;
         })
         .catch(error => {
-            alert(`error ${error}`);
+            error.innerHTML = `<p>Something went wrong, error: ${error}</p>`;
         });
 }
 

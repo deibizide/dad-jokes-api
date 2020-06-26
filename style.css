@@ -46,3 +46,11 @@ body {
 .btn:focus {
     outline: 0;
 }
+
+.error-msg {
+    width: 50%;
+    background-color: firebrick;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
